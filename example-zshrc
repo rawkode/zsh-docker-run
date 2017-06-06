@@ -1,0 +1,11 @@
+function elixir() {
+  run_with_docker "elixir" "latest" "elixir" $@
+}
+
+function iex() {
+  run_with_docker "elixir" "latest" "iex" $@
+}
+
+function mix() {
+  run_with_docker "elixir" "latest" "mix" $@
+}
