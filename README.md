@@ -1,4 +1,4 @@
-# zshrc-docker-run
+# zsh-docker-run
 
 ## Run commands naturally, forgetting all about Docker
 
@@ -24,7 +24,7 @@ Install this plugin with your favourite zsh plugin manager, I use `zplug`:
 
 ```shell
 # For zplug
-zplug "rawkode/zshrc-docker-run"
+zplug "rawkode/zsh-docker-run"
 ```
 
 Now all you need to-do is add some functions to your `.zshrc` file:
