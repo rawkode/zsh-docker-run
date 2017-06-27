@@ -12,6 +12,12 @@ As we adopt Docker more, we install a whole lot less on our machines. Instead of
 docker run --rm -it --entrypoint=irb ruby:latest
 ```
 
+It'd be much better if we could work as we used to, keeping our simple commands. Your first thought might be "use an alias" ... but we want to be better than that. What if we're inside of a project that's using `docker-compose` and we want to update our node packages?
+
+Normally, this is just `npm update`; but instead, we now need to use `docker-compose run --rm node npm update`
+
+*Using this plugin, we can detect these situations for you*. Go back to using `npm update`. Just add a simple function and call `run_with_docker` :smile:
+
 ### How?
 
 Install this plugin with your favourite zsh plugin manager, I use `zplug`:
