@@ -12,7 +12,7 @@ function docker_run() {
 }
 
 function docker_compose_run() {
-  docker-compose run --rm -u $UID --entrypoint=$1 ${@:2}
+  docker-compose run --rm --entrypoint=$1 ${@:2}
 }
 
 function run_with_docker() {
