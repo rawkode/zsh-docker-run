@@ -8,7 +8,7 @@ function can_be_run_through_docker_compose_service() {
 }
 
 function docker_run() {
-  docker run --rm -it -u $UID -v $PWD:/sandbox -v $HOME:$HOME -w /sandbox --entrypoint=$3 $1:$2 ${@:4}
+  docker run --rm -it -u $UID -v $PWD:/sandbox -v $HOME:$HOME -e HOME=$HOME -w /sandbox --entrypoint=$3 $1:$2 ${@:4}
 }
 
 function docker_compose_run() {
